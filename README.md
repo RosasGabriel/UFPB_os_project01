@@ -1,1 +1,1 @@
-# os_project01
+# First project for the discipline of Operational Systems
