@@ -3,39 +3,17 @@
 #include <string>
 #include <vector>
 
-#include "include/fcfs.h"
-#include "include/sjf.h"
-#include "rr.h"
+#include "include/fcfs.hpp"
+#include "include/sjf.hpp"
+#include "include/rr.hpp"
 
-void ReadFile(std::string file_name)
-{
-    std::string file_path = "input.txt";
+int main() {
+  Fcfs fcfs;
+  std::string filename = "input.txt"; // Change this to the actual filename
 
-    std::ifstream file(file_path);
-
-    if(file.is_open())
-    {
-        std::cout << "File opened succesfully!" << std::endl;
-
-        std::string line;
-        while (std::getline(file, line))
-        {
-            std::cout << line << std::endl;
-        }
-
-        file.close();
-    }
-    else
-    {
-        std::cerr << "Failed to open file!" << std::endl;
-    }
-}
-
-int main()
-{
-    std::string filename = "input.txt";
-
-    ReadFile(filename);
-
-    return 0;
+  fcfs.readInputFile(filename);
+  fcfs.execute();
+  fcfs.displayResults();
+  
+  return 0;
 }

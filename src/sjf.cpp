@@ -1,4 +1,4 @@
 #include <iostream>
 #include <vector>
 
-#include "../include/sjf.h"
+#include "../include/sjf.hpp"
