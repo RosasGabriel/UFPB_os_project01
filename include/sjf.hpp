@@ -6,10 +6,10 @@
 #include <vector>
 #include <string>
 
-class Rr
+class Sjf
 {
 public:
-  Rr();
+  Sjf();
   void readInputFile(const std::string& file_name); //method to read the input file and extract the data
   void execute();   //execute the fcfs algorithm
   void displayResults();    //method to print the output

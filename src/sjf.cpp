@@ -3,14 +3,14 @@
 
 #include "../include/sjf.hpp"
 
-Rr::Rr()
+Sjf::Sjf()
 {
  avg_turnaround_time = 0.0;
  avg_response_time   = 0.0;
  avg_waiting_time    = 0.0;   
 }
 
-void Rr::readInputFile(const std::string& file_name)  //method responsible to read the input file
+void Sjf::readInputFile(const std::string& file_name)  //method responsible to read the input file
 {
     std::ifstream file(file_name);
 
@@ -35,12 +35,12 @@ void Rr::readInputFile(const std::string& file_name)  //method responsible to re
     }
 }
 
-void Rr::execute()
+void Sjf::execute()
 {
 
 }
 
-void Rr::displayResults()
+void Sjf::displayResults()
 {
     std::cout << "SJF " << avg_turnaround_time << " " << avg_response_time << " " << avg_waiting_time << std::endl;
 }
