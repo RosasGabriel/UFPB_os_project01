@@ -10,7 +10,7 @@ The expected output is the acronym for each algorithm and the average value for 
 -> Response time;\
 -> Waiting time;
 
-The detailed description for the project can be found in the trabalho01.pdf file\
+The detailed description for the project can be found in the trabalho01.pdf file
 
 -------------------------------------------------------------------------------------------------------------
 
