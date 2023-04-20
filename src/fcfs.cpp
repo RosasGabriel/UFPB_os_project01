@@ -19,7 +19,7 @@ void Fcfs::readInputFile(const std::string& file_name)  //method responsible to 
         int arrival, burst; //variables for saving the arrival and burst times
 
         /*
-        while function using the extraction operator to set the first value on line to the arrival variable
+        while function using the extraction operator (>>) to set the first value on line to the arrival variable
         and the second value on the line to the burst variable
         then both of the variables are pushed back in their respective vectors
         */ 
