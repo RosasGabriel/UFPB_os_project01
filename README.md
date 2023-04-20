@@ -15,7 +15,7 @@ The detailed description for the project can be found in the trabalho01.pdf file
 -------------------------------------------------------------------------------------------------------------
 
 To compile the project use the following command:\
-g++ -Iinclude src/*.cpp main.cpp -o main
+*g++ -Iinclude src/*.cpp main.cpp -o main*
 
 To run the code use the following command:\
-./main
+*./main*
