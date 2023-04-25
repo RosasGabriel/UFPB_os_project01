@@ -8,12 +8,23 @@
 #include "include/rr.hpp"
 
 int main() {
-  Fcfs fcfs;
-  std::string filename = "input.txt"; // Change this to the actual filename
+  std::string file_name = "input.txt"; // Change this to the actual filename, if needed
 
-  fcfs.readInputFile(filename);
+  Fcfs fcfs;
+  // Sjf sjf;
+  Rr rr;
+
+  fcfs.readInputFile(file_name);
   fcfs.execute();
   fcfs.displayResults();
+
+  // sjf.readInputFile(file_name);
+  // sjf.execute();
+  // sjf.displayResults();
+
+  rr.readInputFile(file_name);
+  rr.execute();
+  rr.displayResults();
   
   return 0;
 }
