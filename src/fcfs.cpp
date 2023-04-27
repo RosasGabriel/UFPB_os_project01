@@ -37,7 +37,7 @@ void Fcfs::readInputFile(const std::string& file_name)  //method responsible to 
 
 void Fcfs::execute() 
 {
-    int num_processes = arrival_time.size();  //set the number of processes equals to the number of lines in the input file based on the arrival_time vector
+    const int num_processes = arrival_time.size();  //set the number of processes equals to the number of lines in the input file based on the arrival_time vector
 
     std::vector<int> completion_time(num_processes);
     std::vector<int> turnaround_time(num_processes);

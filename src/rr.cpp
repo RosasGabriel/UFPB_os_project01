@@ -48,14 +48,15 @@ void Rr::execute()
     float total_waiting_time    = 0.0;
     float total_response_time   = 0.0;
 
-    std::vector<int> remaining_time(burst_time); //vector to save the remaining time of each process
-    std::vector<int> completion_time(num_processes);
-    std::vector<int> turnaround_time(num_processes);
-    std::vector<int> waiting_time(num_processes);
+    std::vector<int> remaining_time(burst_time);    //vector to save the remaining time of each process
+    std::vector<int> completion_time(num_processes);    //vector to save the completion time of each process
+    std::vector<int> turnaround_time(num_processes);    //vector to save the turnaround time of each process
+    std::vector<int> waiting_time(num_processes);   //vector to save the waiting time of each process
 
    while (true)
    {
     bool done = true;   //variable to check if all the processes are done
+
     for(int i = 0; i < num_processes; ++i)
     {
         if(remaining_time[i] > 0)   //if there is a process that is not done
@@ -79,6 +80,7 @@ void Rr::execute()
             }
         }
     }
+    
     if(done) break; //if all the processes are done, break the loop
    }
 

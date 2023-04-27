@@ -17,6 +17,11 @@ public:
 private:
   std::vector<int> arrival_time;
   std::vector<int> burst_time;
+
+  std::vector<int> completion_time;
+  std::vector<int> turnaround_time;
+  std::vector<int> waiting_time;
+  std::vector<int> response_time;
   
   float avg_turnaround_time;
   float avg_response_time;
