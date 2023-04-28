@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <unistd.h>
 
 #include "../include/rr.hpp"
 
@@ -29,7 +30,7 @@ void Rr::readInputFile(const std::string& file_name)
             arrival_time.push_back(arrival);
             burst_time.push_back(burst);
         }
-    file.close();
+        file.close();
     } 
     else 
     {
