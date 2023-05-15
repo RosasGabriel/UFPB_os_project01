@@ -44,7 +44,7 @@ void Sjf::readInputFile(const std::string& file_name)  //method responsible to r
     */
     for(int i = 0; i < arrival_time.size(); i++)
     {
-        for(int j = 0; j < arrival_time.size(); j++)
+        for(int j = 0; j < arrival_time.size() - 1; j++)
         {
             /*
             if the arrival time of the current process is greater than the arrival time of the next process
